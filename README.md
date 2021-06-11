@@ -26,7 +26,7 @@ Yokoyama, T. T., & Kasahara, M. (2019). Visualization tools for human structural
 ## Setting up the docker containers
 To set up the docker containers, you need to have [docker](https://docs.docker.com/engine/install/) and [docker-compose](https://docs.docker.com/compose/install/) installed. Clicking on the names will direct you to the installation documentation.
 
-If docker and docker-compose are installed, simply move to the InternshipHoWest directory, which is the cloned repository and execute this command to build and execute the containers:
+If docker and docker-compose are installed, simply move to the PublicCircosVisualization directory, which is the cloned repository and execute this command to build and execute the containers:
 
 ```bash
 sudo docker-compose up -d
