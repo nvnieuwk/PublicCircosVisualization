@@ -1,0 +1,87 @@
+/*Chromosome labels*/
+.chrText text {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-anchor: middle;
+    stroke: none;
+    fill: rgb(92, 92, 92);
+}
+
+/*Stains*/
+.chrArc path {
+    opacity: 0.4;
+    stroke: black;
+    stroke-opacity: 0.25;
+}
+
+.chrArc .filler {
+    opacity: 1;
+}
+
+.stainArc {
+    stroke-width: 0;
+    opacity: 0.5;
+    stroke-opacity: 0.75;
+    stroke: black;
+}
+
+/*Translocations*/
+.translocationCurve {
+    fill: none;
+    stroke: darkcyan;
+    opacity: 0.5;
+}
+
+.translocationBandArc{
+    stroke-opacity: 0.25;
+}
+
+/*Big structural variants*/
+.bigSVBandArc path{
+    opacity: 0.25;
+    fill: lightgray;
+    stroke: black;
+    stroke-opacity: 0.25;
+}
+
+.bigSVBandArc .filler {
+    opacity: 1;
+    fill: white;
+}
+
+.bigSVsArc {
+    stroke-width: 0;
+    fill-opacity: 0.5;
+    stroke-opacity: 0.65;
+}
+
+/*Small structural variants*/
+.smallSVBandArc path {
+    opacity: 0.25;
+    fill: lightgray;
+    stroke: black;
+    stroke-opacity: 0.25;
+}
+
+.smallSVBandArc .filler {
+    opacity: 1;
+    fill: white;
+}
+
+.smallSVArc path {
+    fill-opacity: 0.6;
+    stroke-opacity: 1;
+    stroke-width: 0;
+}
+
+/*CNV*/
+.CNVAxis {
+    opacity: 0.25;
+}
+
+.CNVCurve {
+    stroke-width: 1.5;
+}
+
+

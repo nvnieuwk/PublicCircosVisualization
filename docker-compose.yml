@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  mongodb:
+    image: mongo:4.4.6
+    container_name: mongodb
+
+  mongo_seed: 
+    image: mongo:4.4.6
+    links:
+      - mongodb
+    volumes:
+      - ./data:/seed
+    command:
+      - /seed/seed.sh
+  
+  backend:
+    build: ./backend
+    container_name: backend
+    depends_on: 
+      - mongodb
+    ports:
+      - 5487:8080
+  
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports: 
+      - 5488:80
